@@ -1,73 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SignIn</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SignIn</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
 </head>
 
 <body>
-	<header>
-		<div class="nav">
-			<div class="dropdown_menu">
-				<img src="img/AllTopics.svg">
-			</div>
+<header>
+    <div class="nav">
+        <div class="dropdown_menu">
+            <img src="img/AllTopics.svg">
+        </div>
 
-			<ul class="nav_menu dropdown_items">
-				<li>News</li>
-				<li>Business</li>
-				<li>Technologies</li>
-				<li>Premium</li>
-			</ul>
-		</div>
+        <ul class="nav_menu dropdown_items">
+            <li>News</li>
+            <li>Business</li>
+            <li>Technologies</li>
+            <li>Premium</li>
+        </ul>
+    </div>
 
-		<div class="title_main">
-			<h1>Solace News</h1>
-		</div>
-	</header>
+    <div class="title_main">
+        <h1>Solace News</h1>
+    </div>
+</header>
 
-	<main>
-		<div class="form">
-			<div class="formTitle">
-				<h1>Sign In</h1>
-			</div>
+<main>
+    <form action="submit" class="form">
+        <h2>Sign In</h2>
 
-			<div>
-				<form action="submit">
-					<div class="input_name">
-						<span>Name</span>
-						<div>
-							<input type="text" name="">
-						</div>
-					</div>
-					
-					<div class="input_name">
-						<span>Password</span>
-						<div>
-							<input type="password" name="">
-							<img src="img/Eye.svg">
-						</div>
-					</div>
+        <fieldset>
+            <label for="name">Name</label>
+            <div>
+                <input id="name" name="" required type="text">
+            </div>
 
-					<input type="submit" name="Sign In" value="Sign In">
-				</form>
+            <label for="password">Password</label>
+            <div>
+                <input id="password" name="" required type="password">
+                <button type="button"><img src="img/Eye.svg"></button>
+            </div>
 
-				<button>You don`t have an account?</button>
-			</div>
-		</div>
-	</main>
+            <input name="Sign In" type="submit" value="Sign In">
+            <button>You don`t have an account?</button>
+        </fieldset>
+    </form>
+</main>
 
-	<footer>
-		<p></p>
-		<div>
-			<button class="socialMediaIcon">
-				<img src="img/Twitter.png">
-			</button>
-
-			<button class="socialMediaIcon">
-				<img src="img/Facebook.png">
-			</button>
-		</div>
-	</footer>
+<footer>
+    <p>© 2021 Solace News & Media Limited or its affiliated companies. All rights reserved.</p>
+    <button><i class="fab fa-facebook-square"></i></button>
+    <button><i class="fab fa-twitter-square"></i></button>
+</footer>
 </body>
 </html>
