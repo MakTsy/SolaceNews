@@ -33,29 +33,25 @@
     </header>
 
     <main class="content">
-        <div class="form">
-            <form action="submit">
+            <form class="form" action="submit">
                 <div class="form_title">
                     <h2>Sign In</h2>
                 </div>
-
                 <fieldset>
-                    <label for="name">Name</label>
-                    <div>
-                        <input class="text_input"  id="name" name="" required type="text">
+                    <div class="parameter">
+                        <label for="name">Name</label>
+                        <input class="text_input" id="name" name="" required type="text">
                     </div>
 
-                    <label for="password">Password</label>
-                    <div>
-                        <input class="text_input"  id="password" name="" required type="password">
-                        <button type="button"><img src="img/Eye.svg"></button>
+                    <div class="parameter">
+                        <label for="password">Password</label>
+                        <input class="text_input" id="password" name="" required type="password">
+                        <button id="show_password" type="button"><i class="far fa-eye-slash"></i></button>
                     </div>
-
-                    <input name="Sign In" type="submit" value="Sign In">
-                    <button>You don`t have an account?</button>
                 </fieldset>
+                <input name="Sign In" type="submit" value="Sign In">
+                <button id="no_account_button">You don`t have an account?</button>
             </form>
-        </div>
     </main>
 
     <footer class="footer">
