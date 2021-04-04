@@ -15,43 +15,41 @@
 <body>
 <div class="main_container">
     <header class="header">
-        <div class="menu-wrapper">
-            <input class="toggler" type="checkbox">
-            <div class="hamburger">
-                <div></div>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="news">News</a></li>
-                    <li><a href="business">Business</a></li>
-                    <li><a href="technologies">Technologies</a></li>
-                    <li><a href="premium">Premium</a></li>
-                </ul>
-            </div>
+        <input class="toggler" type="checkbox">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="news">News</a></li>
+                <li><a href="business">Business</a></li>
+                <li><a href="technologies">Technologies</a></li>
+                <li><a href="premium">Premium</a></li>
+            </ul>
         </div>
         <h1>Solace News</h1>
     </header>
 
     <main class="content">
-            <form class="form" action="submit">
-                <div class="form_title">
-                    <h2>Sign In</h2>
+        <form action="submit" class="form">
+            <div class="form_title">
+                <h2>Sign In</h2>
+            </div>
+            <fieldset>
+                <div class="parameter">
+                    <label for="name">Name</label>
+                    <input class="text_input" id="name" name="" required type="text">
                 </div>
-                <fieldset>
-                    <div class="parameter">
-                        <label for="name">Name</label>
-                        <input class="text_input" id="name" name="" required type="text">
-                    </div>
 
-                    <div class="parameter">
-                        <label for="password">Password</label>
-                        <input class="text_input" id="password" name="" required type="password">
-                        <button id="show_password" type="button"><i class="far fa-eye-slash"></i></button>
-                    </div>
-                </fieldset>
-                <input name="Sign In" type="submit" value="Sign In">
-                <button id="no_account_button">You don`t have an account?</button>
-            </form>
+                <div class="parameter">
+                    <label for="password">Password</label>
+                    <input class="text_input" id="password" name="" required type="password">
+                    <button class="show_password" type="button"><i class="far fa-eye-slash"></i></button>
+                </div>
+            </fieldset>
+            <input name="Sign In" type="submit" value="Sign In">
+            <button id="no_account_button">You don`t have an account?</button>
+        </form>
     </main>
 
     <footer class="footer">
