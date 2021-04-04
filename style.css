@@ -114,10 +114,12 @@
 
 .text_input{
     border: solid 2px var(--solace-black);
+    padding-left: 20px;
     height: 48px;
     border-radius: 8px;
     width: 100%;
     margin-top: 5px;
+    font-size: 20px;
 }
 
 .text_input:focus, .show_password:focus{
@@ -134,10 +136,12 @@
 
 .show_password{
     position: absolute;
+    margin: 0;
     right:0;
     top:52%;
     color: black;
     background-color: transparent;
+    border-color: transparent;
     font-size: 16px;
 }
 
@@ -156,6 +160,7 @@
     position: relative;
     background: var(--solace-button-grey);
     color: var(--solace-white);
+    border-color: transparent;
     margin: 15px 0;
     width: 244px;
     height: 23px;
