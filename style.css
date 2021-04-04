@@ -124,8 +124,12 @@
     outline: 0;
 }
 
-.show_password, .form input[type="submit"], #no_account_button{
+.red_button, #no_account_button{
     border-color: transparent;
+}
+
+.red_button:focus{
+    outline: none;
 }
 
 .show_password{
@@ -137,11 +141,10 @@
     font-size: 16px;
 }
 
-.form input[type="submit"]{
+.red_button{
     position: relative;
-    /*left:3%;*/
     display: block;
-    background: var(--solace-red);
+    background: var(--solace-red-button);
     color:var(--solace-white);
     width: 180px;
     height: 35px;

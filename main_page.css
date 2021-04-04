@@ -1,0 +1,119 @@
+@import "constants.css";
+
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+.main_container h1{
+    font-weight: 400;
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+#slogan{
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slogan h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#slogan div{
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    content: "";
+    border-top: 3px solid var(--solace-black);
+    flex: 1 1 auto;
+}
+
+#nav_bar{
+    position: relative;
+    width: 100%;
+    height: 47px;
+    background: var(--solace-black);
+    color:var(--solace-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_bar #nav_list{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#nav_bar #nav_list a, #user a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#nav_bar #nav_list a{
+    margin: 0 40px;
+}
+
+#nav_bar #nav_list a:hover, #user a:hover{
+    color: var(--solace-dark-grey);
+}
+
+#user{
+    position: relative;
+    right: 40px;
+    display: flex;
+    align-items: center;
+}
+#user a{
+    margin-left: 7px;
+}
+
+#main_content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content_column{
+    padding: 0 20px;
+    border-right: 2px solid var(--solace-black);
+    border-left: 1px solid var(--solace-black);
+}
+
+.content_column h3{
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#last_news{
+    flex: 0 0 370px;
+}
+
+.time_news{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--solace-black);
+    margin-bottom: 10px;
+}
+
+.time_news h4{
+    font-family: 'Questrial', sans-serif;
+    margin: 10px 0;
+}
+
+#news{
+    flex: 1 1 auto;
+}
+
+#additional_info{
+    flex: 0 0 370px;
+}
+
