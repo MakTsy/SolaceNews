@@ -4,6 +4,10 @@
     font-family: "Raleway", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .main_container{
     position: absolute;
     left: 0;
