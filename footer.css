@@ -1,6 +1,6 @@
 @import "constants.css";
 
-.footer{
+#footer{
     position: relative;
     margin-top: 20px;
     width: 100%;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.footer a{
+#footer a{
     position: absolute;
     background-color: white;
     display: flex;
@@ -25,15 +25,15 @@
     overflow: hidden;
 }
 
-.footer a:nth-child(2){
+#footer a:nth-child(2){
     right:55px;
 }
 
-.footer a:nth-child(3){
+#footer a:nth-child(3){
     right:20px;
 }
 
-.footer p{
+#footer p{
     position: relative;
     left:10px;
     padding-right: 100px;
