@@ -8,3 +8,11 @@
     --solace-red: rgba(146,55,55,1);
     --solace-red-button:rgba(156,8,8,1);
 }
+
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}

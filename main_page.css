@@ -1,13 +1,5 @@
 @import "constants.css";
 
-*{
-    font-family: "Raleway", sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
 .main_container h1{
     font-weight: 400;
     font-size: 80px;
@@ -225,6 +217,7 @@ a{
 }
 
 .photo_text img{
+    object-fit: cover;
     width: 146px;
     height: 91px;
 }
