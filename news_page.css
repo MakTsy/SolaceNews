@@ -1,0 +1,72 @@
+@import "constants.css";
+
+
+
+
+#main_content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.content_column{
+    padding: 0 20px;
+}
+
+
+.content_column h3{
+    margin: 3em 0 2em 0;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#last_news{
+    flex: 0 0 350px;
+}
+
+.news_box{
+    margin: 10em 0 0 0;
+    padding: 0 8px;
+    border: 2px solid var(--solace-black);
+}
+
+.news_box h4{
+    color: crimson;
+    font-weight: 1000;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_box h5{
+    color: var(--solace-black);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_box h6{
+    color: var(--solace-black);
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time_news{
+    margin: 1em auto 2em;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--solace-black);
+    border-bottom: 1px solid var(--solace-black);
+}
+
+
+
