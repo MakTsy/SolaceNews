@@ -2,62 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="news_page.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6c2a297f2f.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
+    <!--    <link href="layout.css" rel="stylesheet">-->
     <title>News Page</title>
 </head>
 
 <body>
-<header>
-    <div class="nav">
-			<span class="dropdown_menu">
-				<img src="../img/AllTopics.svg">
-			</span>
+<header id="header">
+        <div id="menuToggle">
 
-        <span class="title_main">
-				<h1>Solace News</h1>
-			</span>
+            <input type="checkbox" />
 
-        <ul class="nav_menu dropdown_items">
-            <li>News</li>
-            <li>Business</li>
-            <li>Technologies</li>
-            <li>Premium</li>
-        </ul>
-    </div>
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#"><li>News</li></a>
+                <a href="#"><li>Business</li></a>
+                <a href="#"><li>Technologies</li></a>
+                <a href="#"><li>Premium</li></a>
+            </ul>
+        </div>
+        <div class="title_main">
+            <h1>Solace News</h1>
+        </div>
 </header>
 
-<main>
+<div class="main_container">
+    <div id="main_content">
+        <div class="content_column" id="last_news">
 
-    <div>
-        <div>
+            <div class="news_box">
             <h4>LA, USA</h4>
-            <p>Vladimir Putin</p>
-            <p>Volutpat arcu cursus lobortis nunc felis neque rhoncus sit amet ex non facilisis facilisis libero vestibulum.</p>
+            <h5>Vladimir Putin</h5>
+            <h6>Last updated on february 16 2001</h6>
+            </div>
+
+            <h3> Similar News </h3>
+            <div class="time_news">
+                <p>Facebook Blocks News in Australia, Diverging With Google on Proposed Law</p>
+            </div>
+            <div class="time_news">
+                <p>Uber Drivers Are Entitled to Worker Benefits, a British Court Rules</p>
+            </div>
+            <div class="time_news">
+                <p>Facebook Is Said to Be Building a Product to Compete With Clubhouse</p>
+            </div>
+            <div class="time_news">
+                <p>Facebook Blocks News in Australia, Diverging With Google on Proposed Law</p>
+            </div>
         </div>
-    </div>
-    <div>
-        <h3> Similar News </h3>
-        <div>
-            <p>Dapibus sit amet erat eu pellentesque praesent nec cursus arcu in leo velit pulvinar et est nec bibendum maximus justo maecenas.</p>
-            <p>Volutpat arcu cursus lobortis nunc felis neque rhoncus sit amet ex non facilisis facilisis libero vestibulum.</p>
-            <hr/>
-        </div>
-        <div>
-            <p>Dapibus sit amet erat eu pellentesque praesent nec cursus arcu in leo velit pulvinar et est nec bibendum maximus justo maecenas.</p>
-            <p>Volutpat arcu cursus lobortis nunc felis neque rhoncus sit amet ex non facilisis facilisis libero vestibulum.</p>
-            <hr/>
-        </div>
-        <div>
-            <p>Dapibus sit amet erat eu pellentesque praesent nec cursus arcu in leo velit pulvinar et est nec bibendum maximus justo maecenas.</p>
-            <p>Volutpat arcu cursus lobortis nunc felis neque rhoncus sit amet ex non facilisis facilisis libero vestibulum.</p>
-            <hr/>
-        </div>
-        <div>
-            <p>Dapibus sit amet erat eu pellentesque praesent nec cursus arcu in leo velit pulvinar et est nec bibendum maximus justo maecenas.</p>
-            <p>Volutpat arcu cursus lobortis nunc felis neque rhoncus sit amet ex non facilisis facilisis libero vestibulum.</p>
-            <hr/>
-        </div>
-    </div>
+
 
     <div>
         <div>
@@ -68,6 +75,7 @@
         </div>
     </div>
 
+    </div>
     <div>
         <h4>3 COMMENTS</h4>
         <hr/>
@@ -106,19 +114,11 @@
     </div>
 
 
-
-</main>
-
-<footer>
+<footer id="footer">
     <p>© 2021 Solace News & Media Limited or its affiliated companies. All rights reserved.</p>
-    <div>
-        <button>
-            <img src="../img/Twitter.png">
-        </button>
-        <button>
-            <img src="../img/Facebook.png">
-        </button>
-    </div>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://twitter.com/DmytroKuleba"><i class="fab fa-twitter-square"></i></a>
 </footer>
+
 </body>
 </html>
