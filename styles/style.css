@@ -1,4 +1,4 @@
-@import "constants.css";
+@import "styles/constants.css";
 
 *{
     font-family: "Raleway", sans-serif;
@@ -65,7 +65,7 @@ a{
 
 .parameter{
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 312px;
 }
 
@@ -91,18 +91,10 @@ a{
     outline: 0;
 }
 
-.red_button, #no_account_button{
-    border-color: transparent;
-}
-
-.red_button:focus{
-    outline: none;
-}
-
 .show_password{
     position: absolute;
     margin: 0;
-    right:0;
+    right:-15px;
     top:52%;
     color: black;
     background-color: transparent;
@@ -121,11 +113,18 @@ a{
     font-weight: 500;
 }
 
-#no_account_button{
+.red_button:focus{
+    outline: none;
+}
+
+.grey_button{
     position: relative;
     background: var(--solace-button-grey);
     color: var(--solace-white);
     border-color: transparent;
+}
+
+.grey_button.no_account_button{
     margin: 15px 0;
     width: 244px;
     height: 23px;

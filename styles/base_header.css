@@ -1,0 +1,69 @@
+@import "styles/constants.css";
+
+.main_container h1{
+    font-weight: 400;
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.slogan{
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.slogan div{
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    content: "";
+    border-top: 3px solid var(--solace-black);
+    flex: 1 1 auto;
+}
+
+.nav_bar{
+    position: relative;
+    width: 100%;
+    height: 47px;
+    background: var(--solace-black);
+    color:var(--solace-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar .nav_list{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav_bar .nav_list a, .user a{
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.nav_bar .nav_list a{
+    margin: 0 40px;
+}
+
+.nav_bar .nav_list a:hover, .user a:hover{
+    color: var(--solace-red);
+}
+
+.user{
+    position: relative;
+    right: 40px;
+    display: flex;
+    align-items: center;
+}
+.user a{
+    margin-left: 7px;
+}
