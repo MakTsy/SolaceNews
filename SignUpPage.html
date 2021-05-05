@@ -11,6 +11,8 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/footer.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
+    <script src="scripts/emailValidation.js"></script>
+    <script src="scripts/color.js"></script>
 </head>
 <body>
 <div class="main_container">
@@ -38,23 +40,25 @@
             <fieldset>
                 <div class="parameter">
                     <label for="email">Email</label>
-                    <input class="text_input" id="email" name="" required type="email">
+                    <input class="text_input" id="email" name="" type="email" onclick="blackBorder(this)">
                 </div>
 
                 <div class="parameter">
                     <label for="password">Password</label>
-                    <input class="text_input" id="password" required type="password">
-                    <button class="show_password" type="button"><i class="far fa-eye-slash"></i></button>
+                    <input class="text_input" id="password" type="password" onclick="blackBorder(this)">
+                    <button class="show_password" type="button" onclick="show_hide_password()"><i class="far fa-eye-slash"></i></button>
                 </div>
 
                 <div class="parameter">
                     <label for="confirm_password">Confirm password</label>
-                    <input class="text_input" id="confirm_password" required type="password">
-                    <button class="show_password" type="button"><i class="far fa-eye-slash"></i></button>
+                    <input class="text_input" id="confirm_password" type="password" onclick="blackBorder(this)">
+                    <button class="show_password" type="button" onclick="show_hide_password()"><i class="far fa-eye-slash"></i></button>
                 </div>
                 <input class="red_button" type="submit" value="Sign Up">
             </fieldset>
         </form>
+        <script src="scripts/validateForm.js"></script>
+        <script src="scripts/showPassword.js"></script>
     </main>
 
     <footer class="footer">
