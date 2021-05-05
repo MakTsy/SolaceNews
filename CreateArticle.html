@@ -2,81 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Create Article</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link href="styles/toggle_header.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
 </head>
 
 <body>
-    <header>
-		<div class="nav">
-			<span class="title_main">
-				<h1>Solace News</h1>
-			</span>
-			<div class="dropdown">
-				<button class="dropbtn">
-					<img src="img/AllTopics.svg">
-				</button>
-				<ul class="nav-menu dropdown-items">
-					<li>News</li>
-					<li>Business</li>
-					<li>Technologies</li>
-					<li>Premium</li>
-				</ul>
-			</div>
-		</div>
-	</header>
+<div class="main_container">
+    <header class="header">
+        <input class="toggler" type="checkbox">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="news">News</a></li>
+                <li><a href="business">Business</a></li>
+                <li><a href="technologies">Technologies</a></li>
+                <li><a href="premium">Premium</a></li>
+            </ul>
+        </div>
+        <h1>Solace News</h1>
+    </header>
 
-    <main>
-		<div class="form">
-			<div class="formTitle">
-				<h2>Create Article</h2>
-				<hr>
-			</div>
-			<form action="submit">
-				<div>
-					<label>Select Topic</label>
-					<div>
-						<input type="radio" name="topic" value="news" checked>News<br>
-						<input type="radio" name="topic" value="business">Business<br>
-						<input type="radio" name="topic" value="technologies">Technologies<br>
-						<input type="radio" name="topic" value="premium">Premium<br>
-					</div>
-				</div>
-				<div>
-					<label>Enter Title</label>
-					<div>
-						<input type="text">
-					</div>
-				</div>
-				<div>
-					<label>Enter Text</label>
-					<div>
-						<input type="text">
-					</div>
-				</div>
-				<button>
-					<input type="image">
-					<img src="img/Plus.svg">
-					Add image
-				</button>
-				<div>
-					<input type="submit" value="Publish">
-				</div>
-			</form>
+    <main class="content">
+        <div class="form">
+            <div class="formTitle">
+                <h2>Create Article</h2>
+                <hr>
+            </div>
+            <form action="submit">
+                <div>
+                    <label>Select Topic</label>
+                    <div>
+                        <input checked name="topic" type="radio" value="news">News<br>
+                        <input name="topic" type="radio" value="business">Business<br>
+                        <input name="topic" type="radio" value="technologies">Technologies<br>
+                        <input name="topic" type="radio" value="premium">Premium<br>
+                    </div>
+                </div>
+                <div>
+                    <label>Enter Title</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>Enter Text</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </div>
+                <button>
+                    <input type="image">
+                    <img src="img/Plus.svg">
+                    Add image
+                </button>
+                <div>
+                    <input type="submit" value="Publish">
+                </div>
+            </form>
 
-		</div>
+        </div>
     </main>
 
-	<footer>
-		<p>© 2021 Solace News & Media Limited or its affiliated companies. All rights reserved.</p>
-		<div>
-			<button>
-				<img src="img/Twitter.png">
-			</button>
-			<button>
-				<img src="img/Facebook.png">
-			</button>
-		</div>
-	</footer>
+    <footer class="footer">
+        <p>© 2021 Solace News & Media Limited or its affiliated companies. All rights reserved.</p>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/DmytroKuleba"><i class="fab fa-twitter-square"></i></a>
+    </footer>
+</div>
 </body>
 </html>
