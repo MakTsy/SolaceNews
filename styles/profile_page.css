@@ -1,0 +1,79 @@
+@import "./constants.css";
+
+.profile_page_content {
+    position: relative;
+    top:50px;
+    padding: 50px 0;
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+.big_line {
+    border: none;
+    height: 2px;
+    color: var(--solace-black);
+    background-color: var(--solace-black);
+}
+
+.personal_info {
+    display: inline-block;
+    color: var(--solace-light-grey);
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.left_name {
+    width: 20%;
+}
+
+.right_name {
+    margin-left: 16.5%;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+.mini_line {
+    margin-left: 36.5%;
+    margin-right: 42%;
+}
+
+.email {
+    margin-left: 36.5%;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.password {
+    margin-left: 36.5%;
+    margin-top: 1px;
+    color: var(--solace-light-grey);
+}
+
+.margin_line {
+    margin-left: 36.5%;
+}
+
+.master_card_img {
+    margin-left: 36.5%;
+    display: inline-block;
+}
+
+.card_number {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.payment_info {
+    display: inline-block;
+    text-align: right;
+    width: 46%;
+}
+
+.plan_detail {
+    margin-left: 16.5%;
+    display: inline-block;
+    font-weight: bold;
+}
