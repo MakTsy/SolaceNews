@@ -1,0 +1,11 @@
+@import "./constants.css";
+
+.profile-popup{
+    display: none;
+    width: 100%;
+    background: var(--solace-white);
+    position: absolute;
+    top:inherit;
+    flex: 1 1 auto;
+    min-height: 70%;
+}

@@ -11,7 +11,6 @@
 .big_line {
     border: none;
     height: 2px;
-    color: var(--solace-black);
     background-color: var(--solace-black);
 }
 
@@ -56,19 +55,8 @@ h2 {
     margin-left: 36.5%;
 }
 
-.master_card_img {
-    margin-left: 36.5%;
-    display: inline-block;
-}
-
-.card_number {
-    display: inline-block;
-    margin-left: 1px;
-}
-
 .payment_info {
-    display: inline-block;
-    margin-left: 36%;
+    flex: 0 1 auto;
 }
 
 .plan_detail {
@@ -77,19 +65,32 @@ h2 {
     font-weight: bold;
 }
 
-.backButton {
-    display: inline-block;
-    width: 3%;
-    height: auto;
+.credit_cards{
+    display: flex;
+    margin-left: 36.5%;
+    justify-content: space-between;
 }
 
-.back_to_the_account {
-    display: inline-block;
+.credit_card{
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.credit_card p{
+    margin-left: 15px;
 }
 
 .form_manage_payment_info {
     padding: 20px 50px 100px;
     border: solid;
+}
+
+.form_manage_payment_info h5{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 3px 7px
 }
 
 h4 {
@@ -110,4 +111,28 @@ h4 {
     border-width: 0;
     color: var(--solace-white);
     font-size: large;
+}
+
+.back_to_the_account{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    left: 0;
+    cursor: pointer;
+}
+
+.back_to_the_account p {
+    margin: 0 7px 3px 7px;
+}
+
+.edit_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit_card .edit_buttons{
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: 40px;
 }

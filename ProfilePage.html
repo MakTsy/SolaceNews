@@ -12,7 +12,9 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/profile_page.css" rel="stylesheet">
     <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/profile_pop_up.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6c2a297f2f.js"></script>
+    <script src="scripts/popUp.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
     <title>Profile</title>
 </head>
@@ -39,18 +41,49 @@
             <hr class="big_line"/>
         </div>
 
+        <div class="profile-popup" id="manage_payment_info_pop_up">
+            <div class="back_to_the_account" onclick="closePopUp('manage_payment_info_pop_up')">
+                <img class="backButton" onclick="openForm()" src="img/BackToTheAccountButton.svg">
+                <p class="back_to_the_account">Back to the
+                    account</p>
+            </div>
+            <div class="form_manage_payment_info">
+                <img src="img/CardIcon.svg">
+                <h4>Add a card</h4>
+                <hr class="big_line"/>
+
+                <h5 style="margin-bottom: 2px">Monobank</h5>
+                <div class="edit_card">
+                    <div class="credit_card">
+                        <img src="img/master_card.svg">
+                        <p>**** **** **** 6539</p>
+                    </div>
+                    <div class="edit_buttons">
+                        <button class="edit_buuton">Edit</button>
+                        <button class="delete_button">Delete</button>
+                    </div>
+                </div>
+                <hr class="big_line"/>
+            </div>
+        </div>
+
         <div>
             <p class="personal_info left_name">Personal Data</p>
             <p class="personal_info right_name">Oleg Biden</p>
             <hr class="mini_line"/>
-
             <p class="email">biden.oleg@us.gov</p>
             <p class="password">Password:*********</p>
 
             <hr class="big_line margin_line"/>
-            <img class="master_card_img" src="img/master_card.svg">
-            <p class="card_number">**** **** **** 6532</p>
-            <p class="payment_info"><a href="#">Manage payment info</a></p>
+
+            <div class="credit_cards">
+                <div class="credit_card">
+                    <img class="master_card_img" src="img/master_card.svg">
+                    <p>**** **** **** 6532</p>
+                </div>
+                <p class="payment_info" id="manage_payment_info" onclick="openPopUp('manage_payment_info_pop_up')"><a
+                        href="#">Manage payment info</a></p>
+            </div>
             <p class="margin_line">Your next billing date is March 18, 2021</p>
         </div>
 
