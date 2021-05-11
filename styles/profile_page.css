@@ -68,12 +68,46 @@ h2 {
 
 .payment_info {
     display: inline-block;
-    text-align: right;
-    width: 46%;
+    margin-left: 36%;
 }
 
 .plan_detail {
     margin-left: 16.5%;
     display: inline-block;
     font-weight: bold;
+}
+
+.backButton {
+    display: inline-block;
+    width: 3%;
+    height: auto;
+}
+
+.back_to_the_account {
+    display: inline-block;
+}
+
+.form_manage_payment_info {
+    padding: 20px 50px 100px;
+    border: solid;
+}
+
+h4 {
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.edit_buuton {
+    margin-left: 36%;
+    background-color: var(--solace-light-grey);
+    border-width: 0;
+    font-size: large;
+}
+
+.delete_button {
+    margin-left: 1.5%;
+    background-color: var(--solace-red);
+    border-width: 0;
+    color: var(--solace-white);
+    font-size: large;
 }
