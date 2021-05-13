@@ -16,7 +16,7 @@
 
 .news_box{
     margin: 10em 2em 0;
-    padding: 0 4px;
+    padding: 0 8px;
     border: 2px solid var(--solace-black);
 }
 
@@ -68,7 +68,9 @@
 }
 
 .article{
-    margin: 10em 25em 8em 2em;
+    margin: 10em 25em 4em 2em;
+    padding-bottom: 4em;
+    border-bottom: 2px solid var(--solace-black);
 }
 
 .article a{
