@@ -1,16 +1,18 @@
 @import "./constants.css";
 
-#main_content{
+.main_content{
     display: flex;
     justify-content: flex-start;
 }
 
 .content_column{
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
-#similar_news{
+.similar_news{
     flex: 0 0 400px;
 }
 
@@ -63,7 +65,7 @@
     text-align: center;
 }
 
-#news{
+.news{
     flex: 1 1 auto;
 }
 
@@ -73,15 +75,16 @@
     border-bottom: 2px solid var(--solace-black);
 }
 
-.article a{
+.article h2{
     font-weight: 800;
-    font-size: 22px;
+    font-size: 28px;
     text-align: left;
     color: var(--solace-black);
     margin-bottom: 1em;
 }
 
 .article img{
+    margin: 20px 0;
     width: 95%;
 }
 
@@ -90,4 +93,77 @@
     font-size: 16px;
     text-align: left;
     margin-bottom: 5px;
+}
+
+.comments{
+    position: relative;
+    margin: 0 0 50px 40px;
+    width: 70%;
+}
+
+.comments h4{
+    font-weight: 400;
+    margin: 0;
+}
+
+.comment_field{
+    display: flex;
+    margin: 10px 0;
+}
+
+.comment_field img{
+    width:50px;
+    height: 50px;
+}
+
+.comment_field form{
+    margin: 0 7px;
+    width: 76%;
+    display: flex;
+    align-items: center;
+}
+
+.comment_field form input[type="text"]{
+    border: 3px solid var(--solace-grey);
+    flex: 1 1 auto;
+    height: 50%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.comment_field form input[type="text"]:focus{
+    outline: transparent;
+}
+
+.post_button{
+    margin: 0 10px;
+    height: 60%;
+    position: relative;
+    background: var(--solace-red-button);
+    color: var(--solace-white);
+    border-color: transparent;
+    font-size: 16px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    margin:0 10px;
+    font-size: 15px;
+    width: 70%;
+}
+
+.comment h5{
+    font-weight: 500;
+    color: var(--solace-red);
+    margin: 0 0 0 0;
+    font-size: inherit;
+}
+
+.comment p{
+    font-weight: 400;
+    outline: 3px solid var(--solace-grey);
+    outline-offset: 5px;
+    margin-top: 8px;
+    font-size: inherit;
 }
