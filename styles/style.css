@@ -129,3 +129,20 @@ a{
     width: 244px;
     height: 23px;
 }
+
+.addphoto {
+    border: solid 2px var(--solace-black);
+    padding: 0px;
+    height: 40px;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.addphoto p {
+    margin-top: 8px;
+}
