@@ -1,0 +1,29 @@
+@import "constants.css";
+
+.header.premium, .header.premium .menu, .footer.premium{
+    background: var(--solace-grey);
+}
+
+.header.premium .hamburger div, .main_container.premium {
+    background: var(--solace-black);
+}
+
+.header.premium h1, .header.premium .menu ul li, footer.premium p{
+    color: var(--solace-black);
+}
+
+.news_box.premium h5 {
+    color: var(--solace-turquoise);
+}
+
+.news_box.premium h4, .news_box.premium h6,.article.premium, .article.premium h2 ,.similar_news.premium, .similar_news.premium .time_news a {
+    color: var(--solace-white);
+}
+
+.news_box.premium {
+    border-color: var(--solace-white);
+}
+
+.similar_news.premium .time_news {
+    border-bottom-color: var(--solace-white);
+}
