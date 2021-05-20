@@ -85,6 +85,16 @@
     text-align: center;
 }
 
+.article_preview hr{
+    margin: -30px auto 10px;
+    padding: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #1f090d;
+    box-shadow: 0 20px 20px -20px #333;
+    width: 85%;
+}
+
 .additional_info{
     flex: 0 0 370px;
 }
