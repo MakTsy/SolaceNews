@@ -1,10 +1,5 @@
 @import "./constants.css";
 
-.main_content{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .content_column{
     padding: 0 20px;
     border-right: 2px solid var(--solace-black);

@@ -20,6 +20,15 @@ a{
     align-items: center;
 }
 
+.main_content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_content.column{
+    flex-direction: column;
+}
+
 .content{
     position: relative;
     top:50px;

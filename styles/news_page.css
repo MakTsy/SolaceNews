@@ -1,33 +1,24 @@
 @import "./constants.css";
 
-.main_content{
+.similar_news{
+    flex: 0 0 400px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
-.content_column{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-.similar_news{
-    flex: 0 0 400px;
-}
-
 .news_box{
-    margin: 10em 2em 0;
-    padding: 0 8px;
+    margin: 8em 2em 0;
     border: 2px solid var(--solace-black);
-}
-
-.news_box h4, .news_box h5, .news_box h6{
-    color: var(--solace-black);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.news_box h4, .news_box h5, .news_box h6{
+    margin: 15px 0;
+}
+
 .news_box h4{
     color: crimson;
     font-weight: 1000;
@@ -65,14 +56,11 @@
     text-align: center;
 }
 
-.news{
-    flex: 1 1 auto;
-}
-
 .article{
-    margin: 10em 25em 4em 2em;
+    margin: 8em 22em 1em 2em;
+    flex: 1 1 auto;
     padding-bottom: 4em;
-    border-bottom: 2px solid var(--solace-black);
+    /*border-bottom: 2px solid var(--solace-black);*/
 }
 
 .article h2{
@@ -97,7 +85,7 @@
 
 .comments{
     position: relative;
-    margin: 0 0 50px 40px;
+    margin: 0 22em 3em 2em;
     width: 70%;
 }
 
@@ -118,7 +106,7 @@
 
 .comment_field form{
     margin: 0 7px;
-    width: 76%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -150,7 +138,7 @@
     flex-direction: column;
     margin:0 10px;
     font-size: 15px;
-    width: 70%;
+    width: 90%;
 }
 
 .comment h5{

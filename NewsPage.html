@@ -12,8 +12,10 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/footer.css" rel="stylesheet">
     <link href="styles/news_page.css" rel="stylesheet">
+    <link href="styles/profile_page.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6c2a297f2f.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
+    <script src="scripts/AddComment.js"></script>
     <!--    <link href="layout.css" rel="stylesheet">-->
     <title>News Page</title>
 </head>
@@ -35,6 +37,7 @@
         </div>
         <h1>Solace News</h1>
     </header>
+
     <div class="main_content">
 
         <div class="similar_news">
@@ -58,49 +61,78 @@
             <div class="time_news">
                 <a href="#">Facebook Blocks News in Australia, Diverging With Google on Proposed Law</a>
             </div>
+            <div class="time_news">
+                <a href="#">Facebook Blocks News in Australia, Diverging With Google on Proposed Law</a>
+            </div>
+            <div class="time_news">
+                <a href="#">Facebook Blocks News in Australia, Diverging With Google on Proposed Law</a>
+            </div>
+            <div class="time_news">
+                <a href="#">Facebook Blocks News in Australia, Diverging With Google on Proposed Law</a>
+            </div>
         </div>
 
-
-        <div class="content_column">
-            <div class="news">
-                <div class="article">
-                    <h2>New Economic Theory</h2>
-                    <p>We believe that economic theory, and its core, mathematical modeling of economic interaction,
-                        needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
-                        , and to give useful guidance in policy making in the modern capitalist market system. It
-                        We believe that economic theory, and its core, mathematical modeling of economic interaction,
-                    </p>
-                    <img alt="" src="img/biden.jpg">
-                    <p>We believe that economic theory, and its core, mathematical modeling of economic interaction,
-                        needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
-                        is questionable if this promise is currently fullfilled. In the recent years, economic theory w
-                    </p>
-                </div>
+        <div>
+            <div class="article">
+                <h2>New Economic Theory</h2>
+                <p>We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    , and to give useful guidance in policy making in the modern capitalist market system. It
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                </p>
+                <p>We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                </p>
+                <img alt="" src="img/biden.jpg">
+                <p>We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                    We believe that economic theory, and its core, mathematical modeling of economic interaction,
+                    needs to fullfill the promise to provide helpful tools to explain currently observable phenomena
+                    is questionable if this promise is currently fullfilled. In the recent years, economic theory w
+                </p>
             </div>
-            <div class="comments">
+            <div class="comments" id="comments">
                 <h4>3 COMMENTS</h4>
                 <hr/>
-                <div class="comment_field">
+                <div class="comment_field" id="commentator">
                     <a href="#"><img src="img/Bogdan.jpg"></a>
                     <form action="submit">
-                        <input name="" type="text">
-                        <input class="post_button" name="Post" type="submit" value="Post">
+                        <input id="commentator_message" name="" type="text">
+                        <input class="post_button" name="Post" onclick="return AddComment()" type="submit" value="Post">
                     </form>
                 </div>
 
-                <div class="comment_field">
-                    <a href="#"><img src="img/Max.jpg"></a>
-                    <div class="comment">
-                        <h5>Max Tsybin</h5>
-                        <p>ГОЛОСУЙ ЗА ПОРОШЕНКО!!</p>
+                <div id="another_comments">
+                    <div class="comment_field">
+                        <a href="#"><img src="img/Max.jpg"></a>
+                        <div class="comment">
+                            <h5>Max Tsybin</h5>
+                            <p>ГОЛОСУЙ ЗА ПОРОШЕНКО!!</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="comment_field">
-                    <a href="#"><img src="img/Bogdan.jpg"></a>
-                    <div class="comment">
-                        <h5>Bogdan Naida</h5>
-                        <p>БО ПУТІН НАПАДЕ</p>
+                    <div class="comment_field">
+                        <a href="#"><img src="img/Bogdan.jpg"></a>
+                        <div class="comment">
+                            <h5>Bogdan Naida</h5>
+                            <p>БО ПУТІН НАПАДЕ</p>
+                        </div>
                     </div>
                 </div>
             </div>
