@@ -57,10 +57,11 @@
 }
 
 .article{
-    margin: 8em 22em 1em 2em;
+    position: relative;
+    margin: 6em 22em 1em 2em;
     flex: 1 1 auto;
     padding-bottom: 4em;
-    /*border-bottom: 2px solid var(--solace-black);*/
+    overflow: hidden;
 }
 
 .article h2{

@@ -27,3 +27,25 @@
 .similar_news.premium .time_news {
     border-bottom-color: var(--solace-white);
 }
+
+.read_more_box{
+    position: absolute;
+    z-index: 1;
+    background: rgba(51,51,51,0.16);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+}
+
+.read_more_button{
+    display: block;
+    margin: 15px 0;
+    font-style: italic;
+    cursor: pointer;
+    color: var(--solace-turquoise);
+    font-size: 18px;
+}
+
+.read_more{
+    display: none;
+}
