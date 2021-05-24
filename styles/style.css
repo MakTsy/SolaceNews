@@ -203,6 +203,8 @@ a{
 
 .text_input.card_number{
    width: 80%;
+   text-align: center;
+   font-size: 32px;
 }
 
 .card_creds label {
