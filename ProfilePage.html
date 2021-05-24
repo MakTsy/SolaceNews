@@ -15,6 +15,7 @@
     <link href="styles/profile_pop_up.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6c2a297f2f.js"></script>
     <script src="scripts/popUp.js"></script>
+    <script src="scripts/HideElement.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
     <title>Profile</title>
 </head>
@@ -27,10 +28,11 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="news">News</a></li>
-                <li><a href="business">Business</a></li>
-                <li><a href="technologies">Technologies</a></li>
-                <li><a href="premium">Premium</a></li>
+                <li><a href="./MainPage.html">Main</a></li>
+                <li><a href="./TopicPage.html">News</a></li>
+                <li><a href="./TopicPage.html">Business</a></li>
+                <li><a href="./TopicPage.html">Technologies</a></li>
+                <li><a href="./PremiumPage.html">Premium</a></li>
             </ul>
         </div>
         <h1>Solace News</h1>
@@ -48,19 +50,30 @@
                     account</p>
             </div>
             <div class="form_manage_payment_info">
-                <img src="img/CardIcon.svg">
+                <img src="img/CardIcon.svg" onclick="location.href='EditAddCreditCard.html'">
                 <h4>Add a card</h4>
                 <hr class="big_line"/>
 
-                <h5 style="margin-bottom: 2px">Monobank</h5>
-                <div class="edit_card">
+                <div class="edit_card" id="mono_card">
+                    <h5 style="margin-bottom: 2px">Monobank</h5>
                     <div class="credit_card">
                         <img src="img/master_card.svg">
                         <p>**** **** **** 6539</p>
                     </div>
                     <div class="edit_buttons">
-                        <button class="edit_buuton">Edit</button>
-                        <button class="delete_button">Delete</button>
+                        <button class="edit_buuton" onclick="location.href='EditAddCreditCard.html'">Edit</button>
+                        <button class="delete_button" onclick="HideElement('mono_card')">Delete</button>
+                    </div>
+                </div>
+                <div class="edit_card" id="privat_bank_card">
+                    <h5 style="margin-bottom: 2px">PrivatBank</h5>
+                    <div class="credit_card">
+                        <img src="img/master_card.svg">
+                        <p>**** **** **** 6539</p>
+                    </div>
+                    <div class="edit_buttons">
+                        <button class="edit_buuton" onclick="location.href='EditAddCreditCard.html'">Edit</button>
+                        <button class="delete_button" onclick="HideElement('privat_bank_card')">Delete</button>
                     </div>
                 </div>
                 <hr class="big_line"/>

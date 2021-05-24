@@ -15,6 +15,7 @@
     <link href="styles/profile_pop_up.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/6c2a297f2f.js"></script>
     <script src="scripts/popUp.js"></script>
+    <script src="scripts/SaveCard.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
     <title>Credit Card</title>
 </head>
@@ -52,20 +53,20 @@
                 </div>
             </div>
             <img class="master_card_img" src="img/master_card.svg">
-
+            <div class="successfully_saved_form" id="success_form">
+                <p>I have added card successfully!</p>
+            </div>
         </fieldset>
 
         <div class="button_set">
-            <button class="add_photo cancel">
+            <button class="add_photo cancel" onclick="location.href='ProfilePage.html'">
                 <p>Cancel</p>
             </button>
 
-            <button class="add_photo save" id="red">
+            <button class="add_photo save" id="red" onclick="SaveCard()">
                 <p>Save</p>
             </button>
         </div>
-
-
     </main>
 
     <footer class="footer">

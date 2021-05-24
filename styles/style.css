@@ -237,3 +237,21 @@ a{
     bottom: 15%;
     left:10%;
 }
+
+.successfully_saved_form{
+    margin: auto;
+    position: absolute;
+    background: var(--solace-red);
+    width:500px;
+    height: 250px;
+    display: none;
+    border-radius: 10px;
+}
+
+.successfully_saved_form p{
+    margin-top: 20%;
+    color:var(--solace-white);
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -84,7 +84,7 @@
 .menu{
     position: fixed;
     width: 339px;
-    height: 180px;
+    height: 200px;
     background: var(--solace-black);
     visibility: hidden;
 }
