@@ -37,36 +37,34 @@
     </header>
     <main class="profile_page_content">
 
-            <fieldset class="card_creds">
+        <fieldset class="card_creds">
+            <input class="text_input card_number" id="card_number" name="" onclick="blackBorder(this)" type="text">
+
+            <div class="right_block">
                 <div class="parameter">
-                    <input class="text_input" id="card_number" name="" type="text_input" onclick="blackBorder(this)">
+                    <label>Expiration Date:</label>
+                    <input class="text_input expiration" id="expiration" name="" onclick="blackBorder(this)"
+                           type="text_input">
                 </div>
-
-                <div class="right_block">
                 <div class="parameter">
-                    <label for="last_name">Expiration Date:</label>
-                    <input class="text_input expiration" id="expiration" name="" type="text_input" onclick="blackBorder(this)">
+                    <label>CVV:</label>
+                    <input class="text_input cvv" id="cvv" name="" onclick="blackBorder(this)" type="password">
                 </div>
+            </div>
+            <img class="master_card_img" src="img/master_card.svg">
 
-                <div class="parameter">
-                    <label for="last_name">CVV:</label>
-                    <input class="text_input cvv" id="cvv" name="" type="password" onclick="blackBorder(this)">
-                </div>
-                </div>
-                <img class="master_card_img" src="img/master_card.svg">
+        </fieldset>
 
-            </fieldset>
+        <div class="button_set">
+            <button class="add_photo cancel">
+                <p>Cancel</p>
+            </button>
 
-                <div class="button_set">
-                    <button class="add_photo">
-                        <p>Cancel</p>
-                    </button>
+            <button class="add_photo save" id="red">
+                <p>Save</p>
+            </button>
+        </div>
 
-                    <button id="red" class="add_photo">
-                        <p>Save</p>
-                    </button>
-                </div>
-             
 
     </main>
 
