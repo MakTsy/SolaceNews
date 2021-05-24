@@ -65,6 +65,8 @@
     font-size: 16px;
     font-weight: 500;
     top: -46px;
+    outline: transparent;
+    border: transparent;
 }
 
 .red_button:focus{
@@ -83,7 +85,6 @@
 
 .add_image p {
     margin-top: 8px;
-
 }
 
 
@@ -172,4 +173,6 @@ input:checked + .slider .off
 .slider.round:before {
   border-radius: 50%;}
 
-.image{display: none}
+.image{
+    display: none;
+}

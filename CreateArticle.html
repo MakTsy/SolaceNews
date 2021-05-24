@@ -13,6 +13,7 @@
     <link href="styles/footer.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/9d8814d242.js"></script>
     <script src="scripts/popUp.js"></script>
+    <script src="scripts/createArticlePopUp.js"></script>
 </head>
 
 <body>
@@ -44,9 +45,9 @@
                 <label class="premium">Premium</label>
                 <label class="switch">
                     <input type="checkbox" id="togBtn" checked>
-                    <div class="slider round">
-                        <span class="off" onclick="openPopUp('prev_text')">OFF</span>
-                        <span class="on" onclick="closePopUp('prev_text')">ON</span>
+                    <div class="slider round" onclick="createArticlePopUp('prev_text')">
+                        <span class="off" >OFF</span>
+                        <span class="on" >ON</span>
                     </div>
                 </label><br>
 
@@ -70,10 +71,10 @@
                     <textarea class="text"></textarea><br>
                 </div>
 
-				<button class="add_image">
-                    <img src="img/Plus.svg">
-					<p><input type="image" class="image">Add image</p>
-				</button>
+				<div class="add_image" onclick="document.getElementById('getFile').click()">
+                    <img src="img/Plus.svg" alt="Plus">
+					<p><input type="file" class="image" id="getFile">Add image</p>
+				</div>
 				<input class= "publish_button" type="submit" value="Publish">
 
             </form>
