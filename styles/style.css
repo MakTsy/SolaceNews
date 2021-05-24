@@ -141,7 +141,7 @@ a{
     height: 23px;
 }
 
-.addphoto {
+.add_photo {
     border: solid 2px var(--solace-black);
     padding: 0px;
     height: 40px;
@@ -154,26 +154,25 @@ a{
     display: flex;
 }
 
-.addphoto p {
+.add_photo p {
     margin-top: 8px;
 }
 
-.buttonset {
+.button_set {
     margin-left: 50px;
     display: flex;
 }
 
-.buttonset button {
+.button_set button {
     width: 30%;
     margin-left: 70px;
     margin-top: 20px;
     justify-content: center;
     background: var(--solace-light-grey);
-    color: black); 
-
+    color: black;
 }
 
-.cardcreds {
+.card_creds {
     border: solid 2px var(--solace-black);
     border-radius: 15px;
     width: 80%; 
@@ -187,12 +186,12 @@ a{
     color:var(--solace-white);
 }
 
-.cardcreds #card_number {
+.card_creds #card_number {
     width: 135%;
     margin-left: 25px;
 }
 
-.cardcreds label {
+.card_creds label {
     color: white;
     margin: 0;
 }
@@ -209,12 +208,12 @@ a{
     display: flex;
 }
 
-.rightblock {
+.right_block {
     padding-left: 350px;
     padding-right: 0;
     width: 120px;
 }
 
-.cardcreds .master_card_img {
+.card_creds .master_card_img {
     width: 60px;
 }
