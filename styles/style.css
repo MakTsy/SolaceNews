@@ -72,6 +72,20 @@ a{
     align-items: center;
 }
 
+.sign_parameter{
+    position: relative;
+    margin-bottom: 15px;
+    width: 312px;
+}
+
+.sign_parameter label{
+    display: block;
+    margin-top: 5px;
+    color:var(--solace-dark-grey);
+    font-weight: 500;
+    font-size: 14px;
+}
+
 .parameter{
     display: flex;
     justify-content: space-between;
@@ -80,6 +94,7 @@ a{
     width: 200px;
     margin:20px 0;
 }
+
 
 .parameter label{
     display: block;
