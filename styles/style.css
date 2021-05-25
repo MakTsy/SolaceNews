@@ -127,6 +127,10 @@ a{
     border: transparent;
 }
 
+.red_button.create_article{
+    margin-top: 15px;
+}
+
 .red_button:focus{
     outline: none;
 }
